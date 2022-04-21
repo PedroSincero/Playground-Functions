@@ -52,25 +52,27 @@ function catAndMouse(mouse, cat1, cat2) {
   let distanciaB = Math.abs(cat2 - mouse);
   if (distanciaB < distanciaA) {
     return 'cat2';
-  } if (distanciaA < distanciaB) {
+  }
+  if (distanciaA < distanciaB) {
     return 'cat1';
-  } if (distanciaB === distanciaA) {
+  }
+  if (distanciaB === distanciaA) {
     return 'os gatos trombam e o rato foge';
   }
 }
 
 // Desafio 8
 function fizzBuzz(numbers) {
-  let resultado = []
+  let resultado = [];
   for (let key in numbers) {
     if (numbers[key] % 3 === 0 && numbers[key] % 5 === 0) {
-      resultado.push("fizzBuzz");
+      resultado.push('fizzBuzz');
     } else if (numbers[key] % 5 === 0) {
-      resultado.push("buzz");
+      resultado.push('buzz');
     } else if (numbers[key] % 3 === 0) {
-      resultado.push("fizz");
+      resultado.push('fizz');
     } else {
-      resultado.push("bug!");
+      resultado.push('bug!');
     }
   }
   return resultado;
@@ -81,16 +83,16 @@ function fizzBuzz(numbers) {
 function encode(text) {
   let linha = text;
   for (let key in text) {
-    if (text[key] === "a") {
-      linha = linha.replace("a", 1);
-    } else if (text[key] === "e") {
-      linha = linha.replace("e", 2);
-    } else if (text[key] === "i") {
-      linha = linha.replace("i", 3);
-    } else if (text[key] === "o") {
-      linha = linha.replace("o", 4);
-    } else if (text[key] === "u") {
-      linha = linha.replace("u", 5);
+    if (text[key] === 'a') {
+      linha = linha.replace('a', 1);
+    } else if (text[key] === 'e') {
+      linha = linha.replace('e', 2);
+    } else if (text[key] === 'i') {
+      linha = linha.replace('i', 3);
+    } else if (text[key] === 'o') {
+      linha = linha.replace('o', 4);
+    } else if (text[key] === 'u') {
+      linha = linha.replace('u', 5);
     }
   }
   return linha;
@@ -99,16 +101,16 @@ function encode(text) {
 function decode(text) {
   let linha = text;
   for (let key in text) {
-    if (text[key] === "1") {
-      linha = linha.replace("1", "a");
-    } else if (text[key] === "2") {
-      linha = linha.replace("2", "e");
-    } else if (text[key] === "3") {
-      linha = linha.replace("3", "i");
-    } else if (text[key] === "4") {
-      linha = linha.replace("4", "o");
-    } else if (text[key] === "5") {
-      linha = linha.replace("5", "u");
+    if (text[key] === '1') {
+      linha = linha.replace('1', 'a');
+    } else if (text[key] === '2') {
+      linha = linha.replace('2', 'e');
+    } else if (text[key] === '3') {
+      linha = linha.replace('3', 'i');
+    } else if (text[key] === '4') {
+      linha = linha.replace('4', 'o');
+    } else if (text[key] === '5') {
+      linha = linha.replace('5', 'u');
     }
   }
   return linha;
